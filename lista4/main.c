@@ -18,7 +18,7 @@ int main() {
     }
 
     printf("Inicial:\n");
-    show(&v); //mostra o array
+    show(&v); //mostra o array. tem que ter o & senão mostra o endereço de memória, e não o valor que ocupa o espaço
     printf("Alocado: %d | Ocupado: %d\n", v.tamanho_alocado, v.tamanho_ocupado);
 
     // Inserindo elementos no array
