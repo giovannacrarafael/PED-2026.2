@@ -1,0 +1,10 @@
+/* 
+Explique, com suas próprias palavras, o que são pilhas e filas e quando cada uma é indicada. Sua resposta deve conter:
+
+a) o significado de LIFO e FIFO, e o que cada regra implica sobre qual elemento sai primeiro.
+
+b) por que a pilha precisa controlar uma ponta (o topo), enquanto a fila precisa controlar duas (frente e fundo).
+
+c) um exemplo do dia a dia, diferente dos citados no texto, para cada uma das estruturas.
+
+*/
