@@ -11,7 +11,7 @@ int main() {
     printf("Digite o numero de criancas: ");
     scanf("%d", &N);
 
-    printf("Digite o valor de K: ");
+    printf("Digite o valor de K (numero de vezes que a batata vai passar): ");
     scanf("%d", &K);
 
     // Coloca as crianças de 1 até N na fila
