@@ -3,10 +3,10 @@
 
 int main() {
 
-    int N, K;
-    Fila fila;
+    int N, K; // quantidade de crianças da fila e número de vezes que a batata vai passar
+    Fila fila; //chama a struct Fila
 
-    inicializar(&fila);
+    inicializar(&fila); //inicia a fila em zero
 
     printf("Digite o numero de criancas: ");
     scanf("%d", &N);
@@ -25,23 +25,18 @@ int main() {
     while (fila.quantidade > 1) {
 
         // Passa a batata por K - 1 crianças
-        for (int i = 0; i < K - 1; i++) {
-
+        for (int i = 0; i < K - 1; i++) { // a K-ésima criança que sai, portanto tem que ser K - 1 para manter a criança anterior
             int crianca = dequeue(&fila);
-
-            enqueue(&fila, crianca);
+            enqueue(&fila, crianca); //indica que a batata está passando, colocando a criança que foi retirada da primeira posição na última posição
         }
-
         // A próxima criança é eliminada
         int eliminada = dequeue(&fila);
-
         printf("%d ", eliminada);
     }
 
     // A única criança restante é a vencedora
     int vencedora = dequeue(&fila);
-
     printf("\nVencedora: %d\n", vencedora);
-
+    
     return 0;
 }
