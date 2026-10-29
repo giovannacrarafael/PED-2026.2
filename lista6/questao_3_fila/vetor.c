@@ -1,13 +1,5 @@
 #include <stdio.h>
-#define MAX 1000
-
-typedef struct { // cria a struct para fila
-    int dados[MAX];
-    int inicio; // tem início e fim por conta da saída e da entrada de dados
-    int fim;
-    int quantidade;
-} Fila;
-
+#include "vetor.h"
 
 // Inicializa a fila com todos os índices em zero
 void inicializar(Fila *f) {
