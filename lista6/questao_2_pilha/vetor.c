@@ -1,12 +1,5 @@
 #include <stdio.h>
 
-#define MAX 1000 // define o máximo de caracteres que pode ser colocado na pilha - capacidade do vetor 'dados', não de qualquer string
-
-typedef struct {
-    char dados[MAX]; // 999 + \0
-    int topo;
-} Pilha;
-
 void inicializar(Pilha *p) {
     p->topo = -1; // começa do -1 porque o índice começa do zero. Percorre a pilha.
 }
