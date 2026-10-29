@@ -11,4 +11,4 @@ typedef struct Lista {
     int tamanho; //quantidade de nós da lista
 } Lista;
 
-void 
+void inserir_meio(Lista *lista, int pos, int valor);
