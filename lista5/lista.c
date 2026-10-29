@@ -31,9 +31,11 @@ void inserir_meio(Lista *lista, int pos, int valor) { //sempre pega o primeiro n
     }
 
     //insere o novo nó no meio ou no final
+    // No meio, atual->proximo aponta para um nó que já existe.
+    // No final, atual->proximo é NULL.
     
-    novo->proximo = atual->proximo; //o novo elemento vai apontar para a posição que quer ocupar, por exemplo, quer ocupar a segunda posição, então aponta para o 2
-    atual->proximo = novo; //a segunda posição recebe o novo valor, seguindo o exemplo 
+    novo->proximo = atual->proximo; //o novo elemento vai apontar para a posição que quer ocupar, por exemplo, quer ocupar a segunda posição, então aponta para o 2, já que ele precisa virar o 3
+    atual->proximo = novo; //o elemento na posição 1 passa a apontar para o novo, que vai virar o segundo 
 
     lista->tamanho++;
 };
