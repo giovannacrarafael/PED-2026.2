@@ -1,5 +1,6 @@
 #ifndef HISTORICO_H
 #define HISTORICO_H
+
 #include "atendimento.h" // puxa as informações do atendimento para gerar o histórico
 
 typedef struct NoHistorico { //struct de lista encadeada

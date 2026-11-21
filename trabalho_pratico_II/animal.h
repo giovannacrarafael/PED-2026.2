@@ -98,6 +98,4 @@ int cadastro_situacao_animal(Animal animais[], int quantidade, int id, Situacao 
 int atualizacao_cadastro_animal(Animal animais[], int quantidade, int id);
 int excluir_animal(Animal animais[], int *quantidade, int id); // o ponteiro em quantidade permite decremento de animais da lista
 
-/* Todas as funções são do tipo int porque retornam ou 0, para falha, ou 1, para sucesso. */
-
 #endif

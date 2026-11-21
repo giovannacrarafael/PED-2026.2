@@ -27,7 +27,7 @@ typedef struct Fila { // FIFO: ordem de atendimento com fila em círculo
 } Fila;
 
 void inicializar_fila(Fila *fila); 
-/*essa é necessária para preparar a fila para os dados, deixando os valores de início, de fim e de quantidade corretos 
+/*essa função é necessária para preparar a fila para os dados, deixando os valores de início, de fim e de quantidade corretos. 
 se não fizer isso, a fila não se inicia automaticamente do zero, provocando erros no cadastro de dados.
 criar uma função fila ajuda a repeti-la em outros locais de código, facilitando a manutenção.
 A FILA PRECISA SER INICIADA ANTES DA PRIMEIRA OPERAÇÃO NA FILA, E NÃO ANTES DE CADA CADASTRO!!!
@@ -38,6 +38,6 @@ int cadastro_situacao_atendimento(Fila *fila, int id_atendimento, Atendimento si
 int atualizacao_cadastro_atendimento(Fila *fila, int id_atendimento, Atendimento nova_situacao);
 int excluir_atendimento(Fila *fila, int id_atendimento);
 
-/* Todas as funções são do tipo int porque retornam ou 0, para falha, ou 1, para sucesso. */
+/* Todas as demais funções são do tipo int porque retornam ou 0, para falha, ou 1, para sucesso. */
 
 #endif
