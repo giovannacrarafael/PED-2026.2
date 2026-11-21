@@ -10,7 +10,7 @@ typedef struct NoHistorico { //struct de lista encadeada
 /* Uma struct pode conter um ponteiro para uma estrutura do mesmo tipo (self-referential struct).
 Isso é que permite construir listas encadeadas.*/
 
-void consultar_historico (const NoHistorico *inicio, int id_animal);
+void consultar_historico (const NoHistorico *inicio, int id_animal); // a função evoca somente dados de consultas agendadas por id animal, por isso void
 
 // É interessante manter o const quando a função for somente para consulta, a fim de impedir a modificação dos dados 
 

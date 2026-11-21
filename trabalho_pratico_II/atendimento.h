@@ -38,4 +38,6 @@ int cadastro_situacao_atendimento(Fila *fila, int id_atendimento, Atendimento si
 int atualizacao_cadastro_atendimento(Fila *fila, int id_atendimento, Atendimento nova_situacao);
 int excluir_atendimento(Fila *fila, int id_atendimento);
 
+/* Todas as funções são do tipo int porque retornam ou 0, para falha, ou 1, para sucesso. */
+
 #endif
