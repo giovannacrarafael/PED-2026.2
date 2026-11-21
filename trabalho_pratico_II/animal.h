@@ -1,13 +1,8 @@
 #ifndef ANIMAL_H // verifica se não há .h com o mesmo definidor
 #define ANIMAL_H // cria o header com o nome dado | NÃO UTILIZAR PONTO-E-VÍRGULA
+#include "datahora.h"
 
 // cria as structs para os blocos enum e data do bloco Animal
-
-typedef struct Data {
-    int dia;
-    int mes;
-    int ano;
-} Data;
 
 typedef enum Sexo { // outro tipo de typedef para estruturas pré-estabelecidas (conjunto limitado de valores)
     MACHO, // quando é enum, a lista é separada por vírgula e não tem vírgula no elemento final, tal como o banco de dados
@@ -15,12 +10,13 @@ typedef enum Sexo { // outro tipo de typedef para estruturas pré-estabelecidas 
 } Sexo;
 
 typedef enum Especie {
-    CACHORRO,
-    GATO,
+    CANINA,
+    FELINA,
     OUTRA
 } Especie;
 
 typedef enum Porte {
+    MINI,
     PEQUENO,
     MEDIO,
     GRANDE

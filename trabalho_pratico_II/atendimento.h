@@ -1,5 +1,7 @@
-#ifndef FILA_H
-#define FILA_H
+#ifndef ATENDIMENTO_H
+#define ATENDIMENTO_H
+
+#include "datahora.h"
 
 #define MAX_FILA 100 // quantidade reservada de atendimentos por dia
 
@@ -10,11 +12,14 @@ typedef enum SituacaoAtendimento {
 
 typedef struct Atendimento {
     int id_atendimento;
+    int cpf_vet;
     int id_animal; // só o ID do animal já basta, pois as informações de cadastro estarão guardadas em Animal
+    char observacao[101]; // para incluir o 0/
+    DataHorario agendamento;
     SituacaoAtendimento situacao;
 } Atendimento;
 
-typedef struct Fila { // FIFO
+typedef struct Fila { // FIFO: ordem de atendimento com fila em círculo
     Atendimento dados[MAX_FILA]; // pega os dados de id do atendimento e do animal
     int inicio; // estabelece o início da fila, o primeiro a ser removido
     int fim; // estabelece o fim da fila, onde será inserido o próximo valor
